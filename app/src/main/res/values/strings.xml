@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Adornado_Activity2</string>
+    <string name="textview">TextView</string>
+    <string name="look_at_me">Look at me</string>
+    <string name="color_mixer">Color Mixer</string>
+    <string name="mix_color">Mix Color</string>
+    <string name="output">Output</string>
+    <string-array name="spinner_items">
+        <item>Please choose a color…</item>
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+</resources>

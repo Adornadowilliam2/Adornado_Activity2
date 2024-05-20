@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"
+                android:fontFamily="@font/almendra_sc"
+                android:text="@string/color_mixer"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.626"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boxColorOne"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginEnd="156dp"
+                android:background="@drawable/myborder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boxColorTwo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpinnerOne" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/boxMix"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="156dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="156dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SpinnerTwo" />
+
+            <Button
+                android:id="@+id/btnResult"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="161dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="160dp"
+                android:layout_marginBottom="731dp"
+                android:text="@string/mix_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxMix"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <Spinner
+                android:entries="@array/spinner_items"
+                android:id="@+id/SpinnerOne"
+                android:layout_width="221dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="32dp"
+                android:spinnerMode="dialog"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxColorOne" />
+
+            <Spinner
+                android:entries="@array/spinner_items"
+                android:id="@+id/SpinnerTwo"
+                android:layout_width="221dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/boxColorTwo" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</layout>
